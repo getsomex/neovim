@@ -1,10 +1,11 @@
-call plug#begin('~/.config/nvim/plugged')
+filetype indent on
+" sets
+source $HOME/.config/nvim/sets.vim
 
-Plug 'morhetz/gruvbox'
-Plug 'tpope/vim-fugitive'
-Plug 'preservim/nerdtree'
-Plug 'kien/ctrlp.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-call plug#end()
-colorscheme gruvbox
+" plugins
+source $HOME/.config/nvim/plugins.vim
+
+" themes
+source $HOME/.config/nvim/themes/onedark.vim
 map <silent> <C-n> :NERDTreeFocus<CR>
+inoremap jk <Esc>
